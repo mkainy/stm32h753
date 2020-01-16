@@ -23,9 +23,9 @@ Additionally, the board features:
 – Joystick with 4-direction control and selector
 
 .. image:: img/stm32h753i_eval.jpg
-     :width: 472px
+     :width: 426px
      :align: center
-     :height: 352px
+     :height: 323px
      :alt: STM32H753I-EVAL
 
 More information about the board can be found at the `STM32H753I-EVAL website`_.
@@ -64,7 +64,7 @@ Pin Mapping
 STM32H753I Evaluation kit has 9 GPIO controllers. These controllers are responsible for pin muxing,
 input/output, pull-up, etc.
 
-For mode details please refer to `STM32H747I-DISCO website`_.
+For mode details please refer to `STM32H753I-EVAL website`_.
 
 Default Zephyr Peripheral Mapping:
 ----------------------------------
@@ -101,7 +101,7 @@ COM port interface. Default communication settings are 115200 8N1.
 Resources sharing
 =================
 
-The dual core nature of STM32H747 SoC requires sharing HW resources between the
+The dual core nature of STM32H753 SoC requires sharing HW resources between the
 two cores. This is done in 3 ways:
 
 - **Compilation**: Clock configuration is only accessible to M7 core. M4 core only
@@ -116,7 +116,7 @@ two cores. This is done in 3 ways:
 Programming and Debugging
 *************************
 
-Applications for the ``stm32h747i_disco`` board should be built per core target,
+Applications for the ``stm32h753i_eval`` board should be built per core target,
 using either ``stm32h747i_disco_m7`` or ```stm32h747i_disco_m4`` as the target.
 See :ref:`build_an_application` for more information about application builds.
 
@@ -126,7 +126,7 @@ Flashing
 Flashing operation will depend on the target to be flashed and the SoC
 option bytes configuration.
 It is advised to use `STM32CubeProgrammer`_ to check and update option bytes
-configuration and flash ``stm32h747i_disco_m7`` and ``stm32h747i_disco_m4`` targets.
+configuration and flash ``stm32h753i_eval`` targets.
 
 By default:
 
